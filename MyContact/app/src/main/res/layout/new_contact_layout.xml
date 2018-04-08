@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.mycontact.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/new_contact_frame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <ImageView
+            android:id="@+id/new_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/head1" />
+
+        <EditText
+            android:hint="Name"
+            android:id="@+id/new_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="80dp"
+            android:textColor="#000000"
+            android:textSize="27dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-11dp">
+
+            <TextView
+                android:id="@+id/new_fixed1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="155dp"
+                android:text="Phone Number:"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="200dp"
+                android:src="@drawable/line1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:id="@+id/new_phone"
+                android:layout_height="40dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="180dp"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="53dp">
+
+            <TextView
+                android:id="@+id/new_fixed2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="155dp"
+                android:text="Address:"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="200dp"
+                android:src="@drawable/line2" />
+
+            <EditText
+                android:id="@+id/new_address"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="180dp"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="118dp">
+
+            <TextView
+                android:id="@+id/new_fixed3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="155dp"
+                android:text="Notes:"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="200dp"
+                android:src="@drawable/line2" />
+
+            <EditText
+                android:id="@+id/new_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="180dp"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/save_button"
+        android:layout_width="283dp"
+        android:layout_height="102dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:background="@drawable/add_button"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/save_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="78dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginStart="108dp"
+        android:text="Save"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="@+id/save_button" />
+
+
+</android.support.constraint.ConstraintLayout>
